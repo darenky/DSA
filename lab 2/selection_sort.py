@@ -36,6 +36,6 @@ if __name__ == '__main__':
         comparisons, swaps, execution_time = selection_sort(elements.copy())
         selection_sort(elements)
         print(elements )
-        print("Number of comparisons::", comparisons)
+        print("Number of comparisons:", comparisons)
         print("Number of swaps:", swaps)
         print("Execution time:",  execution_time, "seconds")
