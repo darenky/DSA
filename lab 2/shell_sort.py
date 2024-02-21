@@ -33,16 +33,17 @@ def shell_sort(arr):
 
 if __name__ == '__main__':
     tests = [
-        random.choices(range(1, 1001), k=100),
-        random.choices(range(1, 1001), k=1000) 
+        # random.choices(range(1, 1001), k=100),
+        # random.choices(range(1, 1001), k=1000) 
         # random.choices(range(1, 1001), k=10000)
+        [10,2,7,5,6,8,53,1]
     ]
 
     for elements in tests: 
         comparisons, swaps, execution_time = shell_sort(elements.copy())
         shell_sort(elements)
         print(elements )
-        print("Number of comparisons::", comparisons)
+        print("Number of comparisons:", comparisons)
         print("Number of swaps:", swaps)
         print("Execution time:",  execution_time, "seconds")
 
